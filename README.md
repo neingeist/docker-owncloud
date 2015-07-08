@@ -7,7 +7,9 @@ Dockerfile to run Owncloud 8 in a Fedora 22 Docker container
   * `/var/lib/owncloud/data`
   * `/etc/owncloud`
 
-  See the script `run` for an example using host directories as volumes.
+  See the script `run` for an example using host directories as volumes. This
+  script also uses `:Z` volume suffixes to make use of SELinux MCS separation
+  on my Fedora host.
 
 Issues
 ------
