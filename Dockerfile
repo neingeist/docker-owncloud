@@ -4,7 +4,7 @@ FROM       Fedora-Docker-Base-22-20150521.x86_64
 MAINTAINER Mike Gerber <mike@sprachgewalt.de>
 
 # Perform updates
-RUN dnf -y update && dnf clean all
+RUN dnf -y upgrade && dnf clean all
 
 # Install owncloud owncloud-httpd owncloud-sqlite rpms
 RUN dnf install -y owncloud{,-httpd,-sqlite} && dnf clean all
