@@ -1,6 +1,6 @@
-Dockerfile to run Owncloud 8 in a Fedora 22 Docker container
+Dockerfile to run ownCloud 8 in a Fedora 22 Docker container
 
-* Fedora only: the container uses Owncloud as packaged in Fedora 22.
+* Fedora only: the container uses ownCloud as packaged in Fedora 22.
 * No SSL: SSL is to be handled by a reverse proxy.
 * Persistence: Use Docker volumes to persist the following directories:
   * `/var/lib/owncloud/apps`
