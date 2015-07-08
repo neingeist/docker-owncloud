@@ -1,8 +1,11 @@
 #!/bin/sh
+
+VOLUME_SUFFIX=":Z" # SELinux private unshared label (MCS)
+
 docker run -d \
   -p 127.0.0.1:23080:80 \
-  -v /srv/docker/owncloud/apps:/var/lib/owncloud/apps \
-  -v /srv/docker/owncloud/data:/var/lib/owncloud/data \
-  -v /srv/docker/owncloud/etc/owncloud:/etc/owncloud \
+  -v /srv/docker/owncloud/apps:/var/lib/owncloud/apps$VOLUME_SUFFIX \
+  -v /srv/docker/owncloud/data:/var/lib/owncloud/data$VOLUME_SUFFIX \
+  -v /srv/docker/owncloud/etc/owncloud:/etc/owncloud$VOLUME_SUFFIX \
   --name owncloud --restart=always \
   neingeist/owncloud
