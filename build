@@ -1,2 +1,5 @@
 #!/bin/sh
-docker build -t neingeist/owncloud .
+repository="neingeist/owncloud"
+tag="`date +'%Y%m%d'`"
+docker build -t "$repository:$tag" .
+docker tag -f "$repository:latest" "$repository:$tag"
