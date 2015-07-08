@@ -2,4 +2,4 @@
 repository="neingeist/owncloud"
 tag="`date +'%Y%m%d'`"
 docker build -t "$repository:$tag" .
-docker tag -f "$repository:latest" "$repository:$tag"
+docker tag -f "$repository:$tag" "$repository:latest"
