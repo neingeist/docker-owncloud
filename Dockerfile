@@ -1,6 +1,6 @@
 # Based on the Dockerfile by Dusty Mabe <dusty@dustymabe.com>
 
-FROM       Fedora-Docker-Base-22_Beta-20150415.x86_64
+FROM       Fedora-Docker-Base-22-20150521.x86_64
 MAINTAINER Mike Gerber <mike@sprachgewalt.de>
 
 # Perform updates
