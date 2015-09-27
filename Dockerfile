@@ -1,10 +1,7 @@
 # Based on the Dockerfile by Dusty Mabe <dusty@dustymabe.com>
 
-FROM       Fedora-Docker-Base-22-20150521.x86_64
+FROM       neingeist/fedora22_base
 MAINTAINER Mike Gerber <mike@sprachgewalt.de>
-
-# Perform updates
-RUN dnf -y upgrade && dnf clean all
 
 # Install owncloud owncloud-httpd owncloud-sqlite rpms
 RUN dnf install -y owncloud{,-httpd,-sqlite} && dnf clean all
