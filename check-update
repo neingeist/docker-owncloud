@@ -1,2 +1,0 @@
-#!/bin/sh
-docker run -t --rm neingeist/owncloud:latest /bin/bash -c 'dnf -q check-update; if [ $? == 100 ]; then echo "Updates available"; fi'
